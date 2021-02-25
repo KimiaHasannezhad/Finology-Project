@@ -1,0 +1,191 @@
+$PrimaryColor: #252683;
+
+@media screen and (max-width: 768px) {
+    body,
+    html {
+        overflow-x: hidden;
+    }
+    .home-hero {
+        margin-top: 0px;
+    }
+    .map {
+        display: none;
+    }
+    .burger-menu {
+        border: none;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-right: -50px;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+        position: fixed;
+        background-color: #f0ad4e;
+        svg {
+            color: white;
+            height: 40px;
+            font-size: 30px;
+        }
+    }
+    #menu {
+        display: flex;
+        flex-direction: column;
+        margin-right: -70px;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        font-size: 10px;
+        background: $PrimaryColor;
+        top: 0;
+        z-index: 2;
+        transition: transform 0.5s;
+        animation-name: NavMenuResponsiv;
+        animation-iteration-count: 1;
+        animation-duration: 0.5s;
+        li {
+            button.close-btn {
+                float: right;
+                background: none;
+                border: none;
+            }
+            img.close-icon {
+                height: 20px;
+                margin: 10px 30px;
+            }
+        }
+    }
+    @keyframes NavMenuResponsiv {
+        0% {
+            height: 0;
+        }
+        100% {
+            height: 100%;
+        }
+    }
+    .home-hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-top: 40px;
+        img {
+            width: 80%;
+            margin-bottom: -46px;
+        }
+    }
+    .header-text {
+        text-align: center;
+        width: 100%;
+    }
+    .header-text {
+        h1 {
+            color: white;
+            width: 100%;
+            margin-left: 0;
+            font-size: 30px;
+        }
+        h6 {
+            width: 100%;
+            margin: inherit;
+            font-size: 14px;
+        }
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img {
+            width: 100%;
+            margin-top: 15px;
+        }
+        .text {
+            width: 100%;
+            text-align: center;
+            h3 {
+                width: 100%;
+            }
+        }
+    }
+    .container {
+        margin-top: 100px;
+        .contactUs-section .card {
+            position: inherit;
+            margin: 10px;
+        }
+        .content-header {
+            h2 {
+                width: 100%;
+            }
+            .peoples-btns {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .icon {
+            margin: 10px;
+        }
+        .InfiniteCarouselFrame ul {
+            margin-right: 10px !important;
+        }
+    }
+    .slider-items {
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .slider-title {
+            display: flex;
+            flex-direction: column;
+        }
+        .slider-comment {
+            overflow-x: auto;
+            margin: 0;
+        }
+    }
+    .peoples-section {
+        .card {
+            flex: 0 36%;
+        }
+    }
+    .partners-section {
+        margin: 100px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        .footer-logo {
+            width: auto;
+        }
+        .address {
+            width: 100%;
+            margin: 0;
+        }
+
+        .contactInfo {
+            width: 100%;
+            margin: 0;
+        }
+    }
+    .ReactModal__Content.ReactModal__Content--after-open {
+        width: 300px !important;
+        height: 350px !important;
+    }
+    button.InfiniteCarouselArrow.InfiniteCarouselArrowNext {
+        display: none;
+    }
+    .profile-modal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img {
+            width: 118px;
+            height: 120px;
+            border-radius: 20px;
+        }
+    }
+}
